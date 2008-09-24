@@ -1,0 +1,16 @@
+## Interface: 20400
+
+## Title: Leash
+## Notes: Force-follow addon
+## Author: jazzyfox
+## Version: 0.1
+## X-Email: jazzyfox@gmail.com
+## X-Category: Misc
+
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+## X-LoadOn-Slash: /leash
+
+LibStub.lua
+
+Leash.lua
