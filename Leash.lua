@@ -30,9 +30,10 @@ local IsFriend = function(name)
 end
 
 local LeashTo = function(name) 
-	if UnitInParty(name) or IsFriend(name) then
+	if UnitInParty(name) or UnitInRaid(name) or IsFriend(name) then
 		tryingToFollow = name
 		Print("Got follow request from", name)
+		FollowUnit(name)
 	else
 		Print("Ignoring follow from", name)
 	end
